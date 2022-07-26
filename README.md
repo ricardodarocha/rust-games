@@ -12,7 +12,7 @@ let mut cartas: Vec<i32> = (1..= 42).collect();
 cartas.shuffle(&mut rand::thread_rng());
 println!("{:?}", cartas);
 
-let mao = &cartas[0 ..= 4];
+let mao = &cartas[0 .. 4];
 println!("{:?}", mao);
 ```
 
