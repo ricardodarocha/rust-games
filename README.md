@@ -1,7 +1,25 @@
 # rust-games
 Experimentos com Rust - Como fazer um game
 
-# baralho
+# Introdução
+
+## loop 
+
+Um loop básico de game
+
+```Rust
+    let board = criar_tela();
+    loop {
+        let estado = get_estado(&board);
+        mover(&mut board, estado);
+        renderizar(&board);
+        if gameover {break;}
+    };
+```
+
+# Exemplos
+
+## baralho
 
 Como sortear e embaralhar uma lista
 
@@ -19,21 +37,9 @@ println!("{:?}", mao);
 No primeiro exemplo eu gerei uma lista com z cartas e embaralhei elas.
 Em seguida eu escolho n cartas aleatórias, ‖ n <= z
 
-# loop 
+## dando as cartas
 
-Um loop básico de game
-
-```Rust
-    let board = criar_tela();
-    loop {
-        let estado = get_estado(&board);
-        mover(&mut board, estado);
-        renderizar(&board);
-        if gameover {break;}
-    };
-```
-
-# jogo da vida
+## jogo da vida
 
 ```
 let
